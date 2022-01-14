@@ -1,0 +1,31 @@
+@import "../../global.scss";
+.item {
+    padding: 10px;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #e6e7e8;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    width:130px;
+    text-align:center;
+    @include mobile{
+        margin-top:10px;
+        width:90px;
+        margin-right:0px;
+        font-size:15px;
+        height:20px;
+        padding:4px;
+    }
+
+    &:hover{
+        border:2px solid crimson;
+    }
+
+    &.active {
+        color: white;
+        background-color: crimson;
+    }
+}

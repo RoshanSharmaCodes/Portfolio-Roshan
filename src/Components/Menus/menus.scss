@@ -1,0 +1,40 @@
+.menu {
+    background-color: #59038f;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+
+    &.active {
+        right: 0;
+    }
+
+    .items {
+        
+        font-size: 30px;
+        margin-bottom: 30px;
+        padding:20px;
+    }
+
+
+
+    .link {
+        color: white;
+        text-decoration: none;
+    }
+    .link:hover{
+        color:crimson;
+    }
+
+    .menulist {
+        padding: 40px;
+        width:70%;
+    }
+}

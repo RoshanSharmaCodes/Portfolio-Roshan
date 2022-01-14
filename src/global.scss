@@ -1,0 +1,8 @@
+$mainColor: linear-gradient(45deg,#cf6dcf, #f2f0f2);
+$width:768px;
+
+@mixin mobile{
+    @media(max-width:#{$width}){
+        @content
+    }
+}
